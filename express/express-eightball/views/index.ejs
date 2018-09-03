@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+  <form action="/" method="post">
+    Question:<br>
+    <input type="text" name="question" >
+    <br>
+  <br>
+    <input type="submit" value="Submit">
+  </form>
+  <% if(answer){ %>
+  <p><%=question%>  -  <%=answer%></p>
+  <%}%>
+</body>
+</html>
