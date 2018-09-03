@@ -1,0 +1,17 @@
+<div class='container'>
+    <h1>Vraag</h1>
+    <form (ngSubmit)='onSubmit()' #productForm='ngForm'>
+        <div class='form-group'>
+            <label for='question'>Question :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='text' class='form-control' id='question'
+                   [(ngModel)]='model' name='question'>
+        </div>
+        <br />
+
+        <br />
+        <button type='submit' class='btn btn-success'>Add</button>
+    </form>
+    <div ng-if="question">
+        <p>{{question.answer}}</p>
+    </div>
+</div>
